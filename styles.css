@@ -1061,3 +1061,86 @@ h1, h2, h3 {
     font-size: 15px;
   }
 }
+
+/* ==================================
+   CORREÇÃO DATA E HORÁRIO NO MOBILE
+================================== */
+
+.agendamento-box {
+  width: 100%;
+  max-width: 480px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.agendamento-box input[type="date"],
+.agendamento-box input[type="time"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 14px 10px;
+  color-scheme: dark;
+}
+
+@media (max-width: 480px) {
+  .agendamento-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 22px 16px;
+  }
+
+  .agendamento-box input[type="date"],
+  .agendamento-box input[type="time"] {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 16px;
+    padding: 12px 8px;
+  }
+}
+
+/* ==================================
+   CORREÇÃO DEFINITIVA - DATA E HORA
+================================== */
+
+/* Impede que os campos ultrapassem o formulário */
+.agendamento-box {
+  width: 100%;
+  max-width: 480px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Ajusta todos os campos */
+.agendamento-box input,
+.agendamento-box select {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Ajuste específico para data e horário */
+.agendamento-box input[type="date"],
+.agendamento-box input[type="time"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  font-size: 16px;
+  color-scheme: dark;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 480px) {
+  .agendamento-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 14px;
+  }
+}
