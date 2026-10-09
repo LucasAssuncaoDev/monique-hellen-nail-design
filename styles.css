@@ -1,9 +1,4 @@
 
-/* =========================================
-   MONIQUE HELLEN | NAIL DESIGN
-   CSS COMPLETO
-========================================= */
-
 /* CORES */
 
 :root {
@@ -1152,4 +1147,35 @@ h3 {
   .hero-conteudo {
     animation: none;
   }
+}
+
+/* CORREÇÃO DOS CAMPOS DATE E TIME NO IPHONE */
+
+.agendamento-box input[type="date"],
+.agendamento-box input[type="time"] {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+  padding: 12px 10px;
+  font-size: 16px;
+  background: #141211;
+  color: #ffffff;
+  color-scheme: dark;
+
+  border: 1px solid #675535;
+  border-radius: 9px;
+}
+
+/* Ajusta o conteúdo interno do Safari */
+
+.agendamento-box input[type="date"]::-webkit-date-and-time-value,
+.agendamento-box input[type="time"]::-webkit-date-and-time-value {
+  min-width: 0;
+  text-align: left;
 }
