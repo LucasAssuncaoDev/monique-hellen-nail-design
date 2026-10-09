@@ -1149,30 +1149,40 @@ h3 {
   }
 }
 
-/* CORREÇÃO DOS CAMPOS DATE E TIME NO IPHONE */
+
+/* CORREÇÃO DATA E HORÁRIO - IPHONE */
 
 .agendamento-box input[type="date"],
 .agendamento-box input[type="time"] {
   display: block;
+
   width: 100%;
-  min-width: 0;
   max-width: 100%;
+  min-width: 0;
+
+  height: 54px;
+  min-height: 54px;
+
+  padding: 0 14px;
+
   box-sizing: border-box;
 
-  -webkit-appearance: none;
-  appearance: none;
+  -webkit-appearance: auto;
+  appearance: auto;
 
-  padding: 12px 10px;
-  font-size: 16px;
   background: #141211;
   color: #ffffff;
   color-scheme: dark;
 
   border: 1px solid #675535;
   border-radius: 9px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: normal;
 }
 
-/* Ajusta o conteúdo interno do Safari */
+/* CONTEÚDO INTERNO DO SAFARI */
 
 .agendamento-box input[type="date"]::-webkit-date-and-time-value,
 .agendamento-box input[type="time"]::-webkit-date-and-time-value {
